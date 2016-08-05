@@ -1,0 +1,427 @@
+	body,ol,ul,li,h1,h2,h3,h4,h5,h6,p{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
+	}
+	img{
+		border: 0;
+	}
+	.player{
+		width: 40%;
+		height: 600px;
+		position: absolute;
+		left: 0;
+		top:0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		background-color: #333;
+	}
+	.player .biaotou{
+		width: 100%;
+		height: 50px;
+		background: #000;
+	}
+	.player .biaotou .biaotou1{
+		float: left;
+		text-align: center; 
+		width: 25%;
+		height: 50px;
+		background: #333;
+		font-size: 18px;
+
+		color: #fff;
+		line-height: 50px;
+	}
+	.player .biaotou .biaotou2{
+		font-size: 14px;
+		float: right;
+		width: 15%;
+		line-height: 50px;
+		height: 50px;
+		background: #000;
+		cursor: pointer;
+	}
+
+	.player .player-music li{
+		position: relative;
+		line-height: 40px;
+		/* transition:all 0.8s ease; */
+		text-align: center;
+         cursor: pointer;
+         color: #fff;
+	}
+	.player .player-music li:hover{
+		color: #fff;
+		background: #000;
+	}
+	 .player .player-music li:hover .tubiao{
+		
+		display:block;
+	} 
+	.player-music li:hover .time3{
+		color:#fff;
+	}
+	.player .player-music li::after{
+		content: "";
+		display: block;;
+		clear: both;
+	}
+	.player .player-music li.song1{
+		color: green;
+	}
+	.player .player-music li.song1:hover{
+		color: green;
+	}
+	.player .player-music li .gename{
+		float: left;
+		width: 25%;
+		font-size:14px; 
+
+	}
+	.player .player-music li .geshou{
+		float: left;
+		width: 50%;
+		font-size:14px;
+
+	}
+	.player .player-music li .time3{
+		float: left;
+		width: 25%;
+		font-size:14px;
+		color:#fff;
+	}
+
+	 .player .player-music li .tubiao{
+	    /*  transition:all 0.8s ease; */
+		background: #000;
+		display:none;
+		position: absolute;
+		right: 0;
+		top:0;
+		width: 40%;
+		height: 16px;
+		padding: 12px 0;
+		
+		z-index: 1000;
+	}
+	.player .player-music li .tubiao .delete{
+		transition:all 0.8s ease;
+		width: 15px;
+		height: 15px;
+		
+		float: left;
+		
+		background:url(../images/1.png)no-repeat;
+		 background-position: -48px -126px;
+		} 
+	.player .player-music li .tubiao .dianzan{
+	    width: 15px;
+		height: 15px;
+		transition:all 0.8s ease;
+		float: left;
+		margin-left:10px; 
+		background:url(../images/1.png)no-repeat;
+		 background-position: -83px -126px;
+		}  
+		
+	.player .player-list{
+		width: 40%;
+		height: 115px;
+		position: fixed;
+		left: 0;
+		
+		right: 0;
+		bottom:0;
+		margin: auto;
+		background: #000;
+	}
+	.player .player-list .list{
+		width: 50%;
+		padding: 22px 0;
+		height: 36px;
+		
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	.player .player-list .list .list1{
+		margin-right:10px;
+		margin-top:10px;
+		float: left;
+		width: 25px;
+		height: 20px;
+		background: blue;
+		background:url(../images/1.png)no-repeat;
+		 background-position: -76px -2px;
+	}
+	.player .player-list .list .list1:hover{
+		background:url(../images/1.png)no-repeat;
+		 background-position: -76px -34px;
+	}
+	.player .player-list .list .list2{
+		margin-right:10px; 
+		float: left;
+		width: 30px;
+		height: 35px;
+		background: blue;
+		background:url(../images/1.png)no-repeat;
+		 background-position: -114px -3px;
+	}
+	.player .player-list .list .list2:hover{
+		background:url(../images/1.png)no-repeat;
+		 background-position: -114px -45px;
+	}
+	.player .player-list .list .list2.stop{
+		 background-position: -301px -92px;
+	}
+	.player .player-list .list .list2.stop:hover{
+		 background-position: -343px -92px;
+	}
+	.player .player-list .list .list3{
+		margin-right:10px;
+		margin-top:10px;
+		float: left;
+		width: 25px;
+		height: 20px;
+		
+		background:url(../images/1.png)no-repeat;
+		 background-position: -157px -3px;
+	}
+	.player .player-list .list .list3:hover{
+		background:url(../images/1.png)no-repeat;
+		 background-position: -157px -35px;
+	}
+	.player .player-list .list .list4{
+		margin-right:10px;
+		margin-top:10px; 
+		float: left;
+		width: 25px;
+		height: 20px;
+		background: blue;
+		background:url(../images/1.png)no-repeat;
+		 background-position: -228px -3px;
+		 position: relative;
+	}
+	.player .player-list .list0{
+		float: left;
+	    width: 100px;
+	    height: auto;
+	    font-size: 12px;
+	    line-height: 30px;
+	    text-align: center;
+	   
+	}
+	.player .player-list .list0 .list0-2{
+		width: 34px;
+		margin-left:20px; 
+		height: 16px;
+		background: blue;
+		background:url(../images/1.png)no-repeat;
+		 background-position: 0px -127px;
+		cursor: pointer;
+	}
+	.player .player-list .list0 .list0-2:hover{
+		 background-position: 0px -146px;
+	}
+	.player .player-list .list .list4:hover .xuanka{
+		width:30px;
+		height: 80px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		display:block;
+	}
+	.player .player-list .list .list4 .xuanka .xuanka1{
+		width:30px;
+		height:20px;
+		display: none;
+		background:url(../images/1.png)no-repeat;
+		 background-position: -411px -2px;
+		cursor: pointer;
+	}
+	.player .player-list .list .list4 .xuanka .xuanka2{
+		width:30px;
+		height:20px;
+		display: none;
+		background:url(../images/1.png)no-repeat;
+		 background-position: -381px -47px;
+		cursor: pointer;
+	}
+	.player .player-list .list .list4 .xuanka .xuanka3{
+		width:30px;
+		height:20px;
+		display: none;
+		background:url(../images/1.png)no-repeat;
+		 background-position: -411px -47px;
+		cursor: pointer;
+	}
+	.player .player-list .list .list4 .xuanka .xuanka4{
+		width:30px;
+		height:20px;
+		display: none;
+		background:url(../images/1.png)no-repeat;
+		 background-position: -263px -3px;
+		cursor: pointer;
+	}
+	.player .player-list .list .list4:hover{
+		background:url(../images/1.png)no-repeat;
+		 background-position: -228px -35px;
+	}
+	.tutu{
+		 
+		float: left;
+		width: 20%;
+		height: 100%;
+
+	}
+	.tutu img{
+		width: 100%;
+		height: 100%;
+	}
+	.player-list .tutu1{
+		width: 80%;
+		height: 30px;
+
+		float:right;
+		
+	}
+	.player-list .tutu1-1{
+	   float: left;
+	   width: 80px;
+	   height: 30px;
+	   font-size: 10px;
+	   color: #fff;
+	   line-height: 30px;
+
+	}
+	.player-list .tutu1-2{
+	   float: left;
+	   margin-top:5px; 
+	     width: 74px;
+	     height: 20px;
+	     background: blue;
+	     background:url(../images/1.png)no-repeat;
+		 background-position: -454px -56px;
+
+	}
+	.player-list .tutu1-3{
+	   float: right;
+	    width: 60px;
+	     height: 30px;
+	     background:url(../images/1.png)no-repeat;
+		 background-position: -224px -98px;
+		 text-align: center;
+
+	}
+	 .player-list .tutu2{
+		width: 80%;
+		height: 30px;
+		line-height: 30px;
+	    font-size: 10px;
+		float:right;
+		color: #ccc;
+	} 
+	.player-list .list .yinliang{
+		margin-top:10px;
+		float: left;
+		width: 100px;
+		height: 23px;
+		
+		position: relative;
+	}
+	.player-list .list .yinliang .yinliang1{
+		width: 23px;
+		height: 23px;
+		
+		background:url(../images/1.png)no-repeat;
+		background-position: -194px -4px;
+	}
+	.player-list .list .yinliang .yinliang1:hover{
+		background-position: -194px -36px;
+	}
+	.player-list .list .yinliang .yinliang1.stop1{
+		background-position: -156px -65px;
+	}
+	.player-list .list .yinliang .yinliang1.stop1:hover{
+		background-position: -194px -65px;
+	}
+	.player-list .list .yinliang .yinliang2{
+		float: left;
+		width: 70px;
+		height: 5px;
+		margin-top:7px; 
+		
+		position: absolute;
+		left:23px;
+		top:0;
+		background:url(../images/1.png)no-repeat;
+		background-position: -290px -14px;
+		
+	}
+	.player-list .list .yinliang .yinliang2 .yinliang2-1{
+		width: 70px;
+		height: 5px;
+		
+		
+		position: absolute;
+		left:0px;
+		top:0;
+		background:url(../images/1.png)no-repeat;
+		background-position: -290px -3px;
+		cursor: pointer;
+	}
+	.player-list .list .yinliang .yinliang2.moving{
+		background:url(../images/1.png)no-repeat;
+		background-position: -290px -25px;
+	}
+	.player-list .list .yinliang .yinliang2 .yinliang2-2{
+		width: 6px;
+		height: 10px;
+	    position: absolute;
+		left:0px;
+		top:0px;
+		background:url(../images/1.png)no-repeat;
+		background-position: -366px -3px;
+		cursor: pointer;
+	}
+	.player-list .going{
+		width: 400px;
+		height: 4px;
+		position: absolute;
+		bottom:5px;
+		right: 0;
+		background:#aaa;
+		z-index: 100;
+		 cursor: pointer;
+	}
+	.player-list .going .going1{
+		width: 0px;
+		height: 4px;
+		background: #fff;
+	}
+	.player-list .going .going2{
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: red;
+		position: absolute;
+		left:0px;
+		top:-3px;
+		cursor: pointer;
+	}
+	.player-list .time{
+		width: 40px;
+		height: 20px;
+		color: #000;
+		position: absolute;
+		bottom: 8px;
+		left:150px;
+		font-size: 10px;
+		background: #ccc;
+		z-index: 1000;
+		text-align: center;
+		line-height: 20px;
+		display: none;
+	}
